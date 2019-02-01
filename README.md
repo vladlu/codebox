@@ -7,4 +7,4 @@ For developers — for testing purposes.
 ![Screenshot](https://i.imgur.com/5PYnf3a.png)
 
 #
-Version: 0.8
+Version: 1.0.0
