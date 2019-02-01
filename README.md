@@ -1,6 +1,6 @@
 # About
 
-A WordPress Plugin that adds a PHP Sandbox with WordPress functionality.
+A WordPress Plugin that adds a PHP Sandbox with WordPress functionality. For Developers.
 
 ![Screenshot](https://i.imgur.com/5PYnf3a.png)
 
