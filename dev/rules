@@ -1,36 +1,3 @@
-##
-# Formatting:
-#
-#   At least one tab between items. You can add additional tabs and spaces to give it beautiful formatting.
-#   You can use comments in any format you like — only lines that contain one of the rules will be interpreted.
-#
-# List of available rules:
-#
-#   substitute
-#       dev_mode_text  prod_mode_text  file
-#
-#   copy
-#       from  to
-#
-#   uglifyjs
-#       from  to  [common_directory]
-#
-#   webpack
-#       from  to  [common_directory]
-#
-# =====================================
-#
-#   Webpack
-#       JS:  Babel -> UglifyJS
-#       CSS: Minified
-#
-# =====================================
-#
-# - .dev files are created automatically, with renaming.
-# - Rules are updated only on prod (to_prod), so to_dev always works with the old (previous) rules.
-#
-##
-
 
 # to_prod
 
