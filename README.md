@@ -8,3 +8,5 @@ For developers — for testing purposes.
 
 #
 Version: 1.0.0
+
+License: [MIT](https://github.com/vladlu/codebox/blob/master/LICENSE)
