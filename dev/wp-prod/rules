@@ -1,11 +1,7 @@
 
-# to_prod
-
-
 webpack		script.dev.js	script.js	admin/scripts/
 
 webpack		style.dev.css	style.css	admin/styles/
-
 
 
 ## Libraries
