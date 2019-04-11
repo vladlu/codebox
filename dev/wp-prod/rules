@@ -4,16 +4,16 @@ webpack		script.dev.js	script.js	admin/scripts/
 webpack		style.dev.css	style.css	admin/styles/
 
 
-## Libraries
+# Libraries
 
 
-### babel-polyfill
+## babel-polyfill
 
 
 copy		[m]/@babel/polyfill/dist/polyfill.min.js	libs/babel-polyfill/babel-polyfill.js
 
 
-### CodeMirror
+## CodeMirror
 
 install 	codemirror
 
