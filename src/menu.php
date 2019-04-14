@@ -13,7 +13,7 @@ function codebox_admin_menu() {
 		'manage_options',
 		'codebox',
 		function () {
-			require_once( CODEBOX_DIR . 'src/templates/codebox.php' );
+			require_once CODEBOX_DIR . 'src/templates/codebox.php';
 		},
 		'dashicons-laptop'
 	);
