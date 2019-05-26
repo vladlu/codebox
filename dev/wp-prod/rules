@@ -1,9 +1,9 @@
 plugin
 
 
-webpack		script.dev.js	script.js	admin/scripts/
+webpack		admin/scripts/script.js
 
-webpack		style.dev.css	style.css	admin/styles/
+webpack	    admin/styles/style.css
 
 
 # Libraries
