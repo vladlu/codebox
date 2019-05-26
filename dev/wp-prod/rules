@@ -3,7 +3,7 @@ plugin
 
 webpack		admin/scripts/script.js
 
-webpack	    admin/styles/style.css
+webpack		admin/styles/style.css
 
 
 # Libraries
