@@ -35,8 +35,10 @@ jQuery( $ => {
      * Focuses to the input and moves cursor to the third line.
      */
 
+
     input.focus();
     input.setCursor( {line: 3, ch: 1} );
+
 
     /*
      * Submit Form Handler (AJAX)
