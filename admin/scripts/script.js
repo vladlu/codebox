@@ -3,7 +3,9 @@
 jQuery( $ => {
 
 
-    // CodeMirror
+    /*
+     * CodeMirror
+     */
 
 
     function editor( selector, readOnly=false ) {
@@ -27,7 +29,18 @@ jQuery( $ => {
         output = editor( '.codebox__output', true );
 
 
-    // Submit Form Handler (AJAX)
+    /*
+     * Setups
+     *
+     * Focuses to the input and moves cursor to the third line.
+     */
+
+    input.focus();
+    input.setCursor( {line: 3, ch: 1} );
+
+    /*
+     * Submit Form Handler (AJAX)
+     */
 
 
     $form.submit( (event) => {
@@ -46,7 +59,9 @@ jQuery( $ => {
     });
 
 
-    // Shortcuts
+    /*
+     * Shortcuts
+     */
 
 
     function keyUpHandler( event ) {
