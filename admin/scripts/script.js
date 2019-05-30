@@ -55,9 +55,17 @@ jQuery( $ => {
             'code':   input.getValue()
         };
 
-        $.post( ajaxurl, data, result => {
-            output.setValue( result );
-        } );
+
+        $.post( {
+            url: ajaxurl,
+            data: data,
+            error: jqXHR => {
+                output.setValue( jqXHR.responseText );
+            }
+        } )
+            .done( result => {
+                output.setValue( result );
+            });
     });
 
 
