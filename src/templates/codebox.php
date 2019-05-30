@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <h1 class="codebox_header">CodeBox</h1>
 
 <form class="codebox__form">
-    <div class="codebox__container">
-        <textarea class="codebox__input"></textarea>
+    <div class="codebox__container">           <!-- LFCR -->
+        <textarea class="codebox__input">&lt;?php&#10;&#13;</textarea>
     </div>
 
     <div class="codebox__container" data-gramm_editor="false">
