@@ -21,14 +21,16 @@ jQuery( $ => {
         });
     }
 
-    let input  = editor( '.codebox__input' ),
+    let $form  = $( '.codebox__form' ),
+
+        input  = editor( '.codebox__input' ),
         output = editor( '.codebox__output', true );
 
 
     // Submit Form Handler (AJAX)
 
 
-    $( '.codebox__form' ).submit( (event) => {
+    $form.submit( (event) => {
         event.preventDefault();
 
         let data = {
@@ -49,7 +51,7 @@ jQuery( $ => {
 
     function keyUpHandler( event ) {
         if ( event.ctrlKey && event.keyCode === 13 ) { // Ctrl + Enter
-            $( '.codebox__form' ).submit();
+            $form.submit();
         }
     }
     document.addEventListener( 'keyup', keyUpHandler, false );

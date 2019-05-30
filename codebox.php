@@ -49,6 +49,6 @@ final class CodeBox {
 
 add_action( 'init', function () {
 	if ( current_user_can( 'list_users' ) ) {
-		new CodeBox;
+		new CodeBox();
 	}
 } );
