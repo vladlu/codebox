@@ -61,10 +61,14 @@ jQuery( $ => {
             data: data,
             error: jqXHR => {
                 output.setValue( jqXHR.responseText );
+
+                $( '.CodeMirror' ).addClass( 'codebox__is-error' );
             }
         } )
             .done( result => {
                 output.setValue( result );
+
+                $( '.CodeMirror' ).removeClass( 'codebox__is-error' );
             });
     });
 

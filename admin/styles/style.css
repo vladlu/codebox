@@ -43,3 +43,8 @@
         min-height: 300px;
         margin-top: 30px;
     }
+
+
+.codebox__output + .codebox__is-error {
+    background-color: #ffeded;
+}
