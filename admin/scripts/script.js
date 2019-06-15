@@ -50,7 +50,7 @@ jQuery( $ => {
 
         let data = {
             'action': 'codebox_execute',
-            'token':  codebox.token,
+            'nonceToken':  codebox.nonceToken,
 
             'code':   input.getValue()
         };
