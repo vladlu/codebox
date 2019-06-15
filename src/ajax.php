@@ -12,6 +12,7 @@ function codebox_ajax_execute() {
 	check_ajax_referer( 'codebox-execute', 'nonceToken' );
 
 
+
 	$code = stripcslashes( $_POST['code'] );
 
 	error_reporting( E_ALL );
@@ -20,6 +21,7 @@ function codebox_ajax_execute() {
 	ini_set( 'assert.quiet_eval', 0 );
 
 	eval( "?>$code" );
+
 
 
 	wp_die();
