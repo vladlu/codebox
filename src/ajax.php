@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 function codebox_ajax_execute() {
-	if ( wp_verify_nonce( $_POST['token'], 'codebox-execute' ) ) {
+	if ( wp_verify_nonce( $_POST['nonceToken'], 'codebox-execute' ) ) {
 		$code = stripcslashes( $_POST['code'] );
 
 		error_reporting( E_ALL );

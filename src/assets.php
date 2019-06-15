@@ -48,7 +48,7 @@ final class CodeBox_Menu_Assets {
 
 	private function data_to_scripts() {
 		wp_localize_script( 'codebox-admin-script', 'codebox', [
-			'token' => wp_create_nonce( 'codebox-execute' ),
+			'nonceToken' => wp_create_nonce( 'codebox-execute' ),
 		] );
 	}
 
