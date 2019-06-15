@@ -21,5 +21,6 @@ function codebox_ajax_execute() {
 
 	eval( "?>$code" );
 
+
 	wp_die();
 }
