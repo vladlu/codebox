@@ -48,7 +48,7 @@ final class CodeBox {
 	private function import_files() {
 		require_once CODEBOX_DIR . 'src/ajax.php';
 		require_once CODEBOX_DIR . 'src/menu.php';
-		require_once CODEBOX_DIR . 'src/assets.php';
+		require_once CODEBOX_DIR . 'src/class-assets.php';
 	}
 }
 
