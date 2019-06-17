@@ -1,4 +1,13 @@
 <?php
+/**
+ * AJAX handlers
+ *
+ * Here are the functions that handle AJAX requests.
+ *
+ * @package CodeBox
+ * @since 1.0.0
+ */
+
 
 // Exits if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {

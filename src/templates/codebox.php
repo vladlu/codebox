@@ -1,9 +1,17 @@
 <?php
+/**
+ * The template for CodeBox
+ *
+ * @package CodeBox
+ * @since 1.0.0
+ */
 
-// Exits if accessed directly.
+
+// Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 
 ?>
 
