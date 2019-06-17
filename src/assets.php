@@ -3,13 +3,13 @@
  * Assets
  *
  * Loads assets (JS, CSS), adds data for them etc.
- * 
+ *
  * @package CodeBox
  * @since 1.0.0
  */
 
 
-// Exits if accessed directly.
+// Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
