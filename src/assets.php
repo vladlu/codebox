@@ -15,6 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+/**
+ * Assets class.
+ *
+ * @since 1.1.0
+ */
 final class CodeBox_Menu_Assets {
 
 

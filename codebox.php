@@ -2,7 +2,7 @@
 /*
 Plugin Name: CodeBox
 Description: A PHP Sandbox with WordPress functionality. For developers — for testing purposes.
-Version:     0.8
+Version:     1.1.0
 Plugin URI:  https://github.com/vladlu/codebox
 Author:      Vladislav Luzan
 Author URI:  https://vlad.lu/
@@ -10,12 +10,18 @@ Text Domain: codebox
 License:     MIT
 */
 
+
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 
+/**
+ * Main CodeBox class.
+ *
+ * @since 1.1.0
+ */
 final class CodeBox {
 
 	public function __construct() {
