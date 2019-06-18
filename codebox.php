@@ -50,6 +50,7 @@ final class CodeBox {
 	 * @since 1.1.0
 	 */
 	private function define_constants() {
+
 		/**
 		 * The URL to the plugin.
 		 *
