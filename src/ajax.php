@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Ajax handler that executes arbitrary code.
+ * AJAX handler that executes arbitrary code.
  *
  * @since 1.1.0
  */

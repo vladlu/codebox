@@ -25,9 +25,9 @@ final class CodeBox_Menu_Assets {
 
 	/**
 	 * Suffix for assets.
-	 * Either empty string or ".min"
+	 * Either empty string or ".min".
 	 *
-	 * @var string
+	 * @var string $assets_suffix
 	 */
 	public $assets_suffix;
 
