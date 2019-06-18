@@ -14,7 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-
+/**
+ * Adds the menu and inits assets loading for it.
+ */
 function codebox_admin_menu() {
 	$page = add_menu_page(
 		'CodeBox',

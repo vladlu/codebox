@@ -13,6 +13,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+/**
+ * Ajax handler that executes arbitrary code.
+ *
+ * @since 1.1.0
+ */
 function codebox_ajax_execute() {
 
 	/* Nonce Check */

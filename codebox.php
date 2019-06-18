@@ -24,6 +24,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 final class CodeBox {
 
+
+	/**
+	 * Constructor.
+	 *
+	 * @since 1.1.0
+	 */
 	public function __construct() {
 		$this->define_constants();
 		$this->import_files();
@@ -38,6 +44,11 @@ final class CodeBox {
 	}
 
 
+	/**
+	 * Defines constants.
+	 *
+	 * @since 1.1.0
+	 */
 	private function define_constants() {
 		define( 'CODEBOX_URL', plugin_dir_url( __FILE__ ) );
 		define( 'CODEBOX_DIR', plugin_dir_path( __FILE__ ) );
@@ -45,6 +56,11 @@ final class CodeBox {
 	}
 
 
+	/**
+	 * Imports files.
+	 *
+	 * @since 1.1.0
+	 */
 	private function import_files() {
 		require_once CODEBOX_DIR . 'src/ajax.php';
 		require_once CODEBOX_DIR . 'src/menu.php';

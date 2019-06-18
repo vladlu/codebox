@@ -23,7 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 final class CodeBox_Menu_Assets {
 
 
-
 	/**
 	 * Suffix for assets.
 	 * Either empty string or ".min"
@@ -33,13 +32,22 @@ final class CodeBox_Menu_Assets {
 	public $assets_suffix;
 
 
-
+	/**
+	 * Inits.
+	 *
+	 * @since 1.1.0
+	 */
 	public static function init() {
 		$class = __CLASS__;
 		new $class;
 	}
 
 
+	/**
+	 * Constructor.
+	 *
+	 * @since 1.1.0
+	 */
 	public function __construct() {
 		$this->assets_suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 		
@@ -50,16 +58,31 @@ final class CodeBox_Menu_Assets {
 	}
 
 
+	/**
+	 * Loads styles.
+	 *
+	 * @since 1.1.0
+	 */
 	private function styles() {
 		wp_enqueue_style( 'codebox-admin-style', CODEBOX_URL . 'admin/styles/style' . $this->assets_suffix . '.css', [], CODEBOX_VERSION );
 	}
 
 
+	/**
+	 * Loads scripts.
+	 *
+	 * @since 1.1.0
+	 */
 	private function scripts() {
 		wp_enqueue_script( 'codebox-admin-script', CODEBOX_URL . 'admin/scripts/script' . $this->assets_suffix . '.js', [ 'jquery' ], CODEBOX_VERSION );
 	}
 
 
+	/**
+	 * Loads data to scripts.
+	 *
+	 * @since 1.1.0
+	 */
 	private function data_to_scripts() {
 		wp_localize_script( 'codebox-admin-script', 'codebox', [
 			'nonceToken' => wp_create_nonce( 'codebox-execute' ),
@@ -67,6 +90,11 @@ final class CodeBox_Menu_Assets {
 	}
 
 
+	/**
+	 * Loads libraries.
+	 *
+	 * @since 1.1.0
+	 */
 	private function libraries() {
 		$this->babel_polyfill();
 		$this->codemirror();
@@ -85,6 +113,11 @@ final class CodeBox_Menu_Assets {
 	}
 
 
+	/**
+	 * Loads CodeMirror library.
+	 *
+	 * @since 1.1.0
+	 */
 	private function codemirror() {
 
 		wp_enqueue_style(
