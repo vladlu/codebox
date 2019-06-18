@@ -74,7 +74,7 @@ final class CodeBox {
 		 * @since 1.1.0
 		 * @var string CODEBOX_VERSION
 		 */
-		define( 'CODEBOX_VERSION', '0.8' );
+		define( 'CODEBOX_VERSION', get_file_data( __FILE__, ['Version'] )[0] );
 	}
 
 
