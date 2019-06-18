@@ -50,8 +50,30 @@ final class CodeBox {
 	 * @since 1.1.0
 	 */
 	private function define_constants() {
+		/**
+		 * The URL to the plugin.
+		 *
+		 * @since 1.1.0
+		 * @var string CODEBOX_URL
+		 */
 		define( 'CODEBOX_URL', plugin_dir_url( __FILE__ ) );
+
+
+		/**
+		 * The filesystem directory path to the plugin.
+		 *
+		 * @since 1.1.0
+		 * @var string CODEBOX_DIR
+		 */
 		define( 'CODEBOX_DIR', plugin_dir_path( __FILE__ ) );
+
+
+		/**
+		 * The version of the plugin.
+		 *
+		 * @since 1.1.0
+		 * @var string CODEBOX_VERSION
+		 */
 		define( 'CODEBOX_VERSION', '0.8' );
 	}
 
