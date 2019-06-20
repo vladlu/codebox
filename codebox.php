@@ -8,6 +8,8 @@
  * Author URI:  https://vlad.lu/
  * Text Domain: codebox
  * License:     MIT
+ *
+ * @package CodeBox
  */
 
 
