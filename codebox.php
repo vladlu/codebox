@@ -1,14 +1,14 @@
 <?php
-/*
-Plugin Name: CodeBox
-Description: A PHP Sandbox with WordPress functionality. For developers — for testing purposes.
-Version:     1.1.0
-Plugin URI:  https://github.com/vladlu/codebox
-Author:      Vladislav Luzan
-Author URI:  https://vlad.lu/
-Text Domain: codebox
-License:     MIT
-*/
+/**
+ * Plugin Name: CodeBox
+ * Description: A PHP Sandbox with WordPress functionality. For developers — for testing purposes.
+ * Version:     1.1.0
+ * Plugin URI:  https://github.com/vladlu/codebox
+ * Author:      Vladislav Luzan
+ * Author URI:  https://vlad.lu/
+ * Text Domain: codebox
+ * License:     MIT
+ */
 
 
 // Exit if accessed directly.
