@@ -10,6 +10,7 @@
  * License:     MIT
  *
  * @package CodeBox
+ * @author  Vladislav Luzan <hey@vlad.lu>
  */
 
 
