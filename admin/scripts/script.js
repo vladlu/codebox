@@ -99,7 +99,7 @@ jQuery( $ => {
      * @listens document:keyup
      */
     function keyUpHandler( event ) {
-        if ( event.ctrlKey && event.keyCode === 13 ) { // Ctrl + Enter
+        if ( event.ctrlKey && 13 === event.keyCode ) { // Ctrl + Enter
             $form.submit();
         }
     }
