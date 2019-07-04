@@ -37,10 +37,10 @@ final class CodeBox {
 		$this->define_constants();
 		$this->import_files();
 
-		// Menu
+		// Menu.
 		add_action( 'admin_menu', 'codebox_admin_menu' );
 
-		// AJAX Handler
+		// AJAX Handler.
 		if ( wp_doing_ajax() ) {
 			add_action( 'wp_ajax_codebox_execute', 'codebox_ajax_execute' );
 		}

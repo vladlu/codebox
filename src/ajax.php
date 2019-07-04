@@ -20,7 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function codebox_ajax_execute() {
 
-	/* Nonce Check */
+	/*
+     * Nonce check.
+     */
 	check_ajax_referer( 'codebox-execute', 'nonceToken' );
 
 
