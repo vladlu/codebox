@@ -96,20 +96,7 @@ final class CodeBox_Menu_Assets {
 	 * @since 1.1.0
 	 */
 	private function libraries() {
-		$this->babel_polyfill();
 		$this->codemirror();
-	}
-
-
-	private function babel_polyfill() {
-
-		wp_enqueue_script(
-			'codebox-script-babel-polyfill',
-			CODEBOX_URL . 'libs/babel-polyfill/babel-polyfill.js',
-			[],
-			CODEBOX_VERSION
-		);
-
 	}
 
 
