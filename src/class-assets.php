@@ -8,7 +8,6 @@
  * @since 1.0.0
  */
 
-
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -21,7 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.1.0
  */
 final class CodeBox_Menu_Assets {
-
 
 	/**
 	 * Suffix for assets.
@@ -39,7 +37,7 @@ final class CodeBox_Menu_Assets {
 	 */
 	public static function init() {
 		$class = __CLASS__;
-		new $class;
+		new $class();
 	}
 
 
@@ -50,7 +48,7 @@ final class CodeBox_Menu_Assets {
 	 */
 	public function __construct() {
 		$this->assets_suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		
+
 		$this->styles();
 		$this->scripts();
 		$this->data_to_scripts();
@@ -74,7 +72,13 @@ final class CodeBox_Menu_Assets {
 	 * @since 1.1.0
 	 */
 	private function scripts() {
-		wp_enqueue_script( 'codebox-admin-script', CODEBOX_URL . 'admin/scripts/script' . $this->assets_suffix . '.js', [ 'jquery' ], CODEBOX_VERSION );
+		wp_enqueue_script(
+			'codebox-admin-script',
+			CODEBOX_URL . 'admin/scripts/script' . $this->assets_suffix . '.js',
+			[ 'jquery' ],
+			CODEBOX_VERSION,
+			true
+		);
 	}
 
 
@@ -84,9 +88,13 @@ final class CodeBox_Menu_Assets {
 	 * @since 1.1.0
 	 */
 	private function data_to_scripts() {
-		wp_localize_script( 'codebox-admin-script', 'codebox', [
-			'nonceToken' => wp_create_nonce( 'codebox-execute' ),
-		] );
+		wp_localize_script(
+			'codebox-admin-script',
+			'codebox',
+			[
+				'nonceToken' => wp_create_nonce( 'codebox-execute' ),
+			]
+		);
 	}
 
 
@@ -114,62 +122,68 @@ final class CodeBox_Menu_Assets {
 			CODEBOX_VERSION
 		);
 
-
 		wp_enqueue_script(
 			'codebox-codemirror-main',
 			CODEBOX_URL . 'libs/codemirror/codemirror.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
-
 
 		wp_enqueue_script(
 			'codebox-codemirror-htmlmixed',
 			CODEBOX_URL . 'libs/codemirror/htmlmixed.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-xml',
 			CODEBOX_URL . 'libs/codemirror/xml.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-javascript',
 			CODEBOX_URL . 'libs/codemirror/javascript.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-css',
 			CODEBOX_URL . 'libs/codemirror/css.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-clike',
 			CODEBOX_URL . 'libs/codemirror/clike.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-php',
 			CODEBOX_URL . 'libs/codemirror/php.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 
 		wp_enqueue_script(
 			'codebox-codemirror-addon-edit-matchbrackets',
 			CODEBOX_URL . 'libs/codemirror/addon/edit/matchbrackets.js',
 			[],
-			CODEBOX_VERSION
+			CODEBOX_VERSION,
+			false
 		);
 	}
 

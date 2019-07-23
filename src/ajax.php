@@ -6,7 +6,6 @@
  * @since 1.0.0
  */
 
-
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -19,15 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.1.0
  */
 function codebox_ajax_execute() {
-
 	/*
-     * Nonce check.
-     */
+	 * Nonce check.
+	 */
 	check_ajax_referer( 'codebox-execute', 'nonceToken' );
 
-
-
-	$code = stripcslashes( $_POST['code'] );
+	$code = wp_unslash( $_POST['code'] );
 
 	error_reporting( E_ALL );
 	ini_set( 'log_errors', 0 );
@@ -35,8 +31,6 @@ function codebox_ajax_execute() {
 	ini_set( 'assert.quiet_eval', 0 );
 
 	eval( "?>$code" );
-
-
 
 	wp_die();
 }

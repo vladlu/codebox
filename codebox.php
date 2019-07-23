@@ -13,7 +13,6 @@
  * @author  Vladislav Luzan <hey@vlad.lu>
  */
 
-
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -26,7 +25,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.1.0
  */
 final class CodeBox {
-
 
 	/**
 	 * Constructor.
@@ -62,7 +60,6 @@ final class CodeBox {
 		 */
 		define( 'CODEBOX_URL', plugin_dir_url( __FILE__ ) );
 
-
 		/**
 		 * The filesystem directory path to the plugin.
 		 *
@@ -71,14 +68,13 @@ final class CodeBox {
 		 */
 		define( 'CODEBOX_DIR', plugin_dir_path( __FILE__ ) );
 
-
 		/**
 		 * The version of the plugin.
 		 *
 		 * @since 1.1.0
 		 * @var string CODEBOX_VERSION
 		 */
-		define( 'CODEBOX_VERSION', get_file_data( __FILE__, ['Version'] )[0] );
+		define( 'CODEBOX_VERSION', get_file_data( __FILE__, [ 'Version' ] )[0] );
 	}
 
 
@@ -95,8 +91,11 @@ final class CodeBox {
 }
 
 
-add_action( 'init', function () {
-	if ( current_user_can( 'list_users' ) ) {
-		new CodeBox();
+add_action(
+	'init',
+	function() {
+		if ( current_user_can( 'list_users' ) ) {
+			new CodeBox();
+		}
 	}
-} );
+);

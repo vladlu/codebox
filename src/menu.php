@@ -8,7 +8,6 @@
  * @since 1.0.0
  */
 
-
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -30,7 +29,6 @@ function codebox_admin_menu() {
 		},
 		'dashicons-laptop'
 	);
-
 
 	add_action( 'load-' . $page, [ 'CodeBox_Menu_Assets', 'init' ] );
 }
